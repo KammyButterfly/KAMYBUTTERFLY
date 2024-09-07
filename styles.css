@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cor de fundo do site */
+body {
+    background-color: #e0f7fa; /* Azul claro */
+    color: #333;
+}
+
+/* Estilização do Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 80px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+#searchResults {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Estilização do Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    overflow: hidden; /* Garante que nada ultrapasse os limites */
+    padding: 20px 10px; /* Ajuste o padding se necessário */
+}
+
+.banner img {
+    /* Estilos para o banner */
+.banner {
+    background-color: #3919ed; /* Cor de fundo azul */
+    /* Outros estilos para o banner, se necessário */
+}
+    width: 20%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px; /* Ajusta o padding interno do texto */
+    background-color: rgba(196, 14, 154, 0.788); /* Opcional: adicione uma camada de fundo para melhor legibilidade */
+    border-radius: 5px; /* Opcional: arredonde os cantos */
+}
+
+.banner-text h1 {
+    font-size: 2rem; /* Reduz o tamanho do texto do título */
+    margin: 0; /* Remove a margem ao redor do título */
+    padding: 0; /* Remove o padding do título se necessário */
+}
+
+.banner-text p {
+    font-size: 1rem; /* Reduz o tamanho do texto do parágrafo */
+    margin: 10px 0; /* Ajusta a margem vertical do parágrafo */
+    padding: 0; /* Remove o padding do parágrafo se necessário */
+}
+
+.cta-button {
+    padding: 8px 12px; /* Ajusta o padding do botão */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte do botão */
+}
+
+/* Estilização da Seção de Produtos */
+.produtos {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.produto-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.produto-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto-item h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.produto-item p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.produto-item span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.produto-item button {
+    padding: 8px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.produto-item button:hover {
+    background-color: #e67e22;
+}
+
+/* Estilização da Seção Sobre */
+.sobre {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.sobre p {
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Estilização do Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-bottom: 15px;
+}
+
+footer .social-media a {
+    margin: 0 8px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 20px;
+}
+
+footer .contact-info p {
+    margin: 3px 0;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .search-bar input, .search-bar button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-bar button {
+        margin-left: 0;
+    }
+
+    .banner-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-text p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .produto-item {
+        width: calc(50% - 20px);
+    }
+}
